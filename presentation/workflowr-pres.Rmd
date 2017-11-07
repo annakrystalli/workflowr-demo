@@ -19,22 +19,12 @@ options(htmltools.dir.version = FALSE)
 
 # outline
 
-## Demo of **John Blischak's** ([@jdblischak](https://twitter.com/jdblischak)) awesome [`workflowr`](https://github.com/jdblischak/workflowr) package
+## Demo of **John Blischak's** ([@jdblischak](https://twitter.com/jdblischak)) awesome [`workflowr`](https://jdblischak.github.io/workflowr/index.html) package
 
 - background
-- demo of setting up a new projects
+- demo of setting up a new project
 - demo of a populated project
 
-
-
----
-
-# building on the shoulders of giants
-
-- Git
-- [pandoc](http://pandoc.org/)
-- [knitr]()
-- Rstudio projects
 
 ---
 background-image: url(http://www.deucecitieshenhouse.com/images/2015/08.31/6.jpg)
@@ -42,7 +32,7 @@ background-size: cover
 class: left, top, inverse
 
 
-#  **Tidy projects**
+#  **Motivation: Tidy projects**
 
 - ## **Project organisation**
 
@@ -55,7 +45,7 @@ class: left, top, inverse
 ---
 # Project organisation
 
-- Encourages tidy practices
+- Encourages tidy practices (more at **Data Carpentry** [**File Organisation**](http://www.datacarpentry.org/rr-organization1/) lesson)
 
 
 ![](http://www.deucecitieshenhouse.com/images/2015/08.31/garage.gif)
@@ -86,27 +76,32 @@ Adapt to suit your own project organisation needs/preferences
 ---
 # Project management
 
-building on Git version control system
+### buildis on **Git & GitHub version control system**
 
-- git resources
-- 
+- great for keeping track of changes through time
+
+- great for planning and discussing
+
+- great for collaboration
 
 
 ---
 # Project documentation
 
 Building on `knitr` & `rmarkdown`
-- Analyses in `.Rmd` live in **`analysis/`**
-- render to `html`
-- push to github
+- Analyses documented in `.Rmd` and kept in **`analysis/`** dir
 
-
-
-
+### Encourages literate programming:
+ie **making your analyses (your code, inputs and outputs) understandable to humans**
+- code can still be stored separately in dir **`code/`** and either:
+    - **sourced** using **`source(code/script.R)`**
+    - **read in** using **`read_chunk(code/script.R)`**  and called using the chunk name
 
 ---
 
 # Project website
+
+- Share documentation easily on the web!
 
 - Develop content in `.Rmd` documents in the **`analysis/`** dir
 
@@ -163,16 +158,11 @@ Calls default chunks in **`analysis/chunks.R`** using `knitr::read_chunk(chunks.
 
 
 
+
 ---
-# Elements of an analysis page
+class: center, center, inverse
 
-The rest of any analysis `.Rmd` serves to promote good practice in encouraging 
-### Literate programming:
-ie **making your analyses (your code, inputs and outputs) understandable to humans**
-- code can still be stored separately in dir **`code/`** and either:
-    - **sourced** using **`source(code/script.R)`**
-    - **read in** using **`read_chunk(code/script.R)`**  and called using the chunk name
-
+# Key functions
 ---
 
 # Start a new project
@@ -193,11 +183,6 @@ git config --global user.email "youremail@domain"
 
 (you can run `git config -l` in the shell to confirm).
 
-
----
-class: center, center, inverse
-
-# Key functions
 ---
 
 ## start a new `workflowr` project
@@ -313,7 +298,7 @@ class: center, middle, inverse
 # Examples in the wild:
 
 .left[
-- live demo ([vignette]())
+- live demo ([vignette](http://annakrystalli.me/workflowr-demo/files/workflowr-vignette.nb.html))
 - populated [example](https://github.com/annakrystalli/news-scrape)]
 
 ---
@@ -322,6 +307,15 @@ class: center, middle, inverse
 # Questions?
 
 <br>
+
+
+.left[presentation @ 
+<br>
+
+http://annakrystalli.me/workflowr-demo/presentation/workflowr-pres.html]
+
+<br>
+
 
 .footnote[**github:** [@annakrystalli](https://github.com/annakrystalli) <br> **twitter:** [@annakrystalli](https://twitter.com/annakrystalli)]
 
